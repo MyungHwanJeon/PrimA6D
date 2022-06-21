@@ -3,7 +3,9 @@
 </h1>
 
 <h3 align="center">
-  Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation
+  Ambiguity-Aware Multi-Object Pose Optimization
+  
+  for Visually-Assisted Robot Manipulation
 </h3>
 
 <div align="center">
