@@ -13,5 +13,5 @@
 </div>
 
 <h1 align="center">
-  Source code will available soon after review process
+  Source code will be available soon after review process
 </h1>
