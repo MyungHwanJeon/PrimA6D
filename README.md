@@ -1,13 +1,15 @@
 <h1 align="center">
-  MoreFusion
+  PrimA6D++
 </h1>
 
 <h3 align="center">
   Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation
 </h3>
 
-<p align="center">
-[![Video Label](http://img.youtube.com/vi/GF8wDMlJXdE/0.jpg)](https://youtu.be/GF8wDMlJXdE)
-</p>
+<div align="center">
+  <a href="[https://www.youtube.com/watch?v=GF8wDMlJXdE](https://youtu.be/GF8wDMlJXdE)"><img src="https://img.youtube.com/vi/GF8wDMlJXdE/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
 
-# Source code will available soon
+<h1 align="center">
+  Source code will available soon after review process
+</h1>
