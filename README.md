@@ -27,15 +27,21 @@
     - More details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
 
  - ***PrimA6D++ (Under Review)***
-   - PrimA6D++ estimates three rotation axis primitive images and its associated uncertainties.
-    <p align="center"><img src="assets/prima6d++_1.gif" width=640></p>
+   - PrimA6D++ estimates three rotation axis primitive images and their associated uncertainties.    
+    <div align="center">
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_1.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_4.gif" width="480" alt="IMAGE ALT TEXT"></a>
+    </div>
    - With estimated uncertainties, PrimA6D++ handles object ambiguity without prior information on object shape.
-    <p align="center"><img src="assets/prima6d++_3.gif" width=640></p>
-    <p align="center"><img src="assets/prima6d++_2.gif" width=640></p>
-    <p align="center"><img src="assets/prima6d++_4.gif" width=640></p>    
+    <div align="center">
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_2.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_3.gif" width="480" alt="IMAGE ALT TEXT"></a>
+    </div>
+    
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
- - ***Object-SLAM for Multi-Object Pose Optimization***
+ - ***Object-SLAM for Multi-Object Pose Optimization (Under Review)***
+   - Leveraging the uncertainty, we formulate the problem as an object-SLAM to optimize multi-object poses.
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
   
