@@ -18,11 +18,10 @@
 
 
 # Citation
-
-"""
+```
 @ARTICLE{mjeon_prima6d,
   title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
   author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
   journal={Under Review}
 }
-"""
+```
