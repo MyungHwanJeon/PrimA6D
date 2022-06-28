@@ -16,15 +16,37 @@
   Source code will be available soon after review process
 </h1>
 
-# PrimA6D++
- - Intro 
+# PrimA6D
+ 1. _***PrimA6D**_
+  - Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation
 
- - How to use
+
+    Please consider citing the paper as:
+    ```
+    @ARTICLE{mjeon_prima6d,
+      title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
+      author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
+      journal={Under Review}
+    }
+    ```
+
+  - Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation
+
+    Please consider citing the paper as:
+    ```
+    @ARTICLE{mjeon_prima6d,
+      title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
+      author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
+      journal={Under Review}
+    }
+    ```
+  
+ 2. _***How to use***_
 
 # Multi-Object Pose Optimization
- - Intro 
+ 1. _***What is **_ 
 
- - How to use
+ 2. _***How to use***_
 
 
 ## Contact
