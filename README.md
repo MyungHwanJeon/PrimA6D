@@ -1,44 +1,40 @@
 <h1 align="center">
-  PrimA6D
+  ** Source code will be available soon after review process **
 </h1>
 
-<div align="center">  
+# PrimA6D
+
+<div align="left">  
   <a href="https://scholar.google.co.kr/citations?user=ivOqySYAAAAJ">Myung-Hwan Jeon</a>,  
   Jeongyun Kim,
-  <a href="https://ayoungk.github.io/">Ayoung Kim</a>
-  
-  <a href="https://rpm.snu.ac.kr">Robust Perception for Mobile Robotics Laboratory (RPM Robotics Lab)</a>
+  <a href="https://ayoungk.github.io/">Ayoung Kim</a>  
+  at <a href="https://rpm.snu.ac.kr">Robust Perception for Mobile Robotics Laboratory (RPM Robotics Lab)</a>
 </div>
 
 ## Note
 - Our study named PrimA6D is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
-- Our extended version, PrimA6D++, is under review.
-  - [Paper], [Video](https://youtu.be/akbI61jUJgY)
-- ***Source code will be available soon after review process***
+- The extended version, PrimA6D++, is under review.
+  - [Paper](), [Video](https://youtu.be/akbI61jUJgY)
 
-<h2 align="center">
-  ** Source code will be available soon after review process **
-</h2>
-
-
-
-
-
-
-
-# What is PrimA6D?
+## What is PrimA6D?
  - ***PrimA6D***
+    - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
+    - more details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
 
  - ***PrimA6D++***
+  - more details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
       
  - ***Object-SLAM for Multi-Object Pose Optimization***
+  - more details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
   
-# How to use
+## How to use
+ 1. 
+ 2. 
+ 3. 
 
-
-# Citation
+## Citation
 
 Please consider citing the paper as:
 ```
@@ -58,7 +54,7 @@ author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
 journal={Under Review}}
 ```
 
-# Contact
+## Contact
 If you have any questions, contact here please
 ```
 myunghwan.jeon@kaist.ac.kr
