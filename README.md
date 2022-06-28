@@ -17,15 +17,10 @@
 </h1>
 
 
-<h2 align="center">
-  Citation
-</h2>
-Please consider citing the paper as:
+# Citation
 
-```
 @ARTICLE{mjeon_prima6d,
   title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
   author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
   journal={Under Review}
 }
-```
