@@ -17,8 +17,9 @@
 </h1>
 
 
-## Citation
-
+<h2 align="center">
+  Citation
+</h2>
 Please consider citing the paper as:
 
 ```
