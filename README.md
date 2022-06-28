@@ -17,10 +17,15 @@
 </h1>
 
 # PrimA6D++
+ - Intro 
+
+ - How to use
 
 # Multi-Object Pose Optimization
+ - Intro 
 
-## Acknowledgement
+ - How to use
+
 
 ## Contact
 If you have any questions, contact here please
