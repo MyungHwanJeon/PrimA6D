@@ -15,3 +15,16 @@
 <h1 align="center">
   Source code will be available soon after review process
 </h1>
+
+
+## Citation
+
+Please consider citing the paper as:
+
+```
+@inproceedings{mjeon_prima6d,
+  title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
+  author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
+  journal={Under Review}
+}
+```
