@@ -23,11 +23,15 @@
 
     Please consider citing the paper as:
     ```
-    @ARTICLE{mjeon_prima6d,
-      title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
-      author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
-      journal={Under Review}
-    }
+    @ARTICLE{9123683,
+    author={Jeon, Myung-Hwan and Kim, Ayoung},
+    journal={IEEE Robotics and Automation Letters}, 
+    title={PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation}, 
+    year={2020},
+    volume={5},
+    number={3},
+    pages={4955-4962},
+    doi={10.1109/LRA.2020.3004322}}
     ```
 
   - Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation
@@ -37,8 +41,7 @@
     @ARTICLE{mjeon_prima6d,
       title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
       author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
-      journal={Under Review}
-    }
+      journal={Under Review}}
     ```
   
  2. _***How to use***_
