@@ -12,13 +12,13 @@
 </div>
 
 ## Note
-- Our study named ***PrimA6D*** is accepted for RA-L.
+- Our study, ***PrimA6D***, is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
 - The extended version, ***PrimA6D++***, is under review.
   - [Paper](), [Video](https://youtu.be/akbI61jUJgY)
 
 ## What is PrimA6D?
- - ***PrimA6D (RA-L 2022)***
+ - ***PrimA6D (RA-L 2020)***
     - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
     <div align="center">
       <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d.png" width="75%" alt="IMAGE ALT TEXT"></a>
