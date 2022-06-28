@@ -18,6 +18,7 @@
 
 
 # Citation
+Please consider citing the paper as:
 ```
 @ARTICLE{mjeon_prima6d,
   title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
