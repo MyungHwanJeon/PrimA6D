@@ -29,13 +29,13 @@
  - ***PrimA6D++ (Under Review)***
    - PrimA6D++ estimates three rotation axis primitive images and their associated uncertainties.    
     <div align="center">
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_1.gif" width="480" alt="IMAGE ALT TEXT"></a>
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_4.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_1.gif" width="400" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_3.gif" width="400" alt="IMAGE ALT TEXT"></a>
     </div>
    - With estimated uncertainties, PrimA6D++ handles object ambiguity without prior information on object shape.
     <div align="center">
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_2.gif" width="480" alt="IMAGE ALT TEXT"></a>
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_3.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_2.gif" width="400" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_4.gif" width="400" alt="IMAGE ALT TEXT"></a>
     </div>
     
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
