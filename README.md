@@ -21,7 +21,7 @@
  - ***PrimA6D (RA-L 2022)***
     - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
     <div align="center">
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d.png" width="640" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d.png" width="75%" alt="IMAGE ALT TEXT"></a>
     </div>
     
     - More details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
@@ -29,13 +29,13 @@
  - ***PrimA6D++ (Under Review)***
    - PrimA6D++ estimates three rotation axis primitive images and their associated uncertainties.    
     <div align="center">
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_1.gif" width="480" alt="IMAGE ALT TEXT"></a>
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_3.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_1.gif" width="45%" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_3.gif" width="45%" alt="IMAGE ALT TEXT"></a>
     </div>
    - With estimated uncertainties, PrimA6D++ handles object ambiguity without prior information on object shape.
     <div align="center">
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_2.gif" width="480" alt="IMAGE ALT TEXT"></a>
-      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_4.gif" width="480" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_2.gif" width="45%" alt="IMAGE ALT TEXT"></a>
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d++_4.gif" width="45%" alt="IMAGE ALT TEXT"></a>
     </div>
     
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
