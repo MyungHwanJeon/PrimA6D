@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
   ** Source code will be available soon after review process **
-</h1>
+</h2>
 
 # PrimA6D
 
@@ -12,9 +12,9 @@
 </div>
 
 ## Note
-- Our study named PrimA6D is accepted for RA-L.
+- Our study named ***PrimA6D*** is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
-- The extended version, PrimA6D++, is under review.
+- The extended version, ***PrimA6D++***, is under review.
   - [Paper](), [Video](https://youtu.be/akbI61jUJgY)
 
 ## What is PrimA6D?
