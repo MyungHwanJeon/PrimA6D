@@ -16,8 +16,19 @@
   Source code will be available soon after review process
 </h1>
 
+# PrimA6D++
 
-# Citation
+# Multi-Object Pose Optimization
+
+## Acknowledgement
+
+## Contact
+If you have any questions, contact here please
+```
+myunghwan.jeon@kaist.ac.kr
+```
+
+## Citation
 Please consider citing the paper as:
 ```
 @ARTICLE{mjeon_prima6d,
