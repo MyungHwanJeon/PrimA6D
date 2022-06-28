@@ -20,13 +20,19 @@
 ## What is PrimA6D?
  - ***PrimA6D***
     - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
-    - more details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
+    <div align="center">
+      <a href="https://www.youtube.com/watch?v=HbNmsmTLRmk"><img src="assets/prima6d.png" width="640" alt="IMAGE ALT TEXT"></a>
+    </div>
+    
+    - More details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
 
  - ***PrimA6D++***
-  - more details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
-      
+   - PrimA6D++ estimates three rotation axis primitive images and its associated uncertainties.
+   - With estimated uncertainties, PrimA6D++ handles object ambiguity without prior information on object shape.
+   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
+
  - ***Object-SLAM for Multi-Object Pose Optimization***
-  - more details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
+   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
   
 ## How to use
