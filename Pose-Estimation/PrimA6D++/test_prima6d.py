@@ -31,7 +31,7 @@ import json
 
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
-from model import utils, Discriminator, PrimA6DPPNet
+from model import utils, Discriminator, PrimA6DPPNet, SegmentationNet
 from model.utils import *
 from model.loss import *
 
@@ -71,6 +71,7 @@ args = parser.parse_args()
 os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
 model_P_weight_path = "./trained_weight/obj_" + args.obj + "_P.pth_add_best"
+model_S_weight_path = "../Segmentation/trained_weight/obj_" + args.obj + "_S.pth"
 
 obj_model_path = '../dataset/3d_model/' + str(args.dataset) + '/model_eval/obj_' +  "%06d" % int(args.obj) + '.ply'
 obj_model = trimesh.load(obj_model_path)
@@ -116,7 +117,11 @@ def main():
         test_file_list = [os.path.join(test_file_path, x) for x in os.listdir(test_file_path)] 
     test_file_list.sort()
     
-    test_dataset = DatasetLoader(file_dir=test_file_list, train=False, primitive_scale=primitive_scale, img_origin=True)
+    model_S = SegmentationNet.SegmentationNet(device=device).to(device)          
+    model_S.cuda()        
+    load_weight_all(model_S, pre_trained_path=model_S_weight_path)     
+    
+    test_dataset = DatasetLoader(file_dir=test_file_list, train=False, primitive_scale=primitive_scale, img_origin=True, segmentation_model=model_S)
     test_dataset = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 1, shuffle = False)    
                 
     ## prepare model ##   
