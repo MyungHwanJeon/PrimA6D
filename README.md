@@ -51,10 +51,63 @@
    
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
-  
-## How to use
+## Install
 
- TBA.
+ - ***Download Repo***   
+     ````shell
+     $ git clone git@github.com:rpmsnu/PrimA6D.git
+     ````
+
+ - ***Docker Image Download & Run***
+   - We provide a docker image with an environment setup. You can download this docker image on the docker hub.
+     ````shell
+     $ docker pull jmong1994/jeon:prima6d_new
+
+     $ xhost +local:docker
+     $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+     
+     $ export PrimA6D_path=/path/to/PrimA6D
+    ````    
+  
+## Inference of pose estimation
+
+ - Prepare data
+   ````shell
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/YCB  
+   $ python3 YCB_test.py -o=[obj_id]         
+   ````     
+
+ - ***PrimA6D*** Inference
+   ````shell
+   $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
+   $ python3 4_test_all.py -o=[obj_id]         
+   ````          
+
+ - ***PrimA6D++*** Inference
+   ````shell
+   $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
+   $ python3 test_prima6d.py -o=[obj_id]         
+   ````           
+
+
+
+
+ 
+   - Download ***Sun2012Pascal*** and ***BOP*** dataset
+     ````shell
+     $ cd $pose_estimation_path/dataset/raw_dataset
+     $ bash get_sun2012pascalformat.sh
+     $ cd bop          
+     $ bash get_bop_ycbv.sh          
+     ````
+     
+   - Prepare data
+     ````shell
+     $ cd $pose_estimation_path/dataset/YCB
+     $ python3 YCB_train_synthetic.py -o=[obj_id]
+     $ python3 YCB_train_pbr.py -o=[obj_id]    
+     $ python3 YCB_test.py -o=[obj_id]         
+     ````     
  
 
 ## Citation
