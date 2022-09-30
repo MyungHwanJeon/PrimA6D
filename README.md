@@ -5,7 +5,7 @@
 # PrimA6D
 
 <div align="left">  
-  <a href="https://scholar.google.co.kr/citations?user=ivOqySYAAAAJ">Myung-Hwan Jeon</a>,  
+  <a href="https://myunghwanjeon.github.io">Myung-Hwan Jeon</a>,  
   <a href="https://scholar.google.co.kr/citations?user=vW2JtFAAAAAJ">Jeongyun Kim</a> and
   <a href="https://ayoungk.github.io/">Ayoung Kim</a> at <a href="https://rpm.snu.ac.kr">RPM Robotics Lab</a>
 </div>
