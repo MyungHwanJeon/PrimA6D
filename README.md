@@ -98,7 +98,7 @@
    $ python3 YCB_train_pbr.py -o=[obj_id]    
    $ python3 YCB_test.py -o=[obj_id]         
    ````     
-   For example, to prepare the No.1 of YCB ojbect, `python3 YCB_train_synthetic.py -o=1`      
+   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`      
 
 ## How To Use: PrimA6D
   
@@ -111,7 +111,7 @@
    ````            
    You can download pre-trained weights in release.   
    Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
-   For example, to infer the No.1 of YCB ojbect, `python3 4_test_all.py -o=1`          
+   For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1`          
    
  - ***Train*** 
    ***TBA***
@@ -128,7 +128,7 @@
    ````            
    You can download pre-trained weights in release.   
    Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`.   
-   For example, to infer the No.1 of YCB ojbect, `python3 test_prima6d.py -o=1`      
+   For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1`      
 
  - ***Train*** 
    ***TBA***
