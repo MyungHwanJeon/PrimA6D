@@ -20,7 +20,7 @@
 
 <hr/>
 
-## What is PrimA6D?
+## What Is PrimA6D?
  - ***PrimA6D (RA-L 2020)***
     - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
     <div align="center">
@@ -57,7 +57,7 @@
 
 <hr/>
 
-# How To Use - 6D Object Pose Estimation
+# How To Use: 6D Object Pose Estimation
 
 ## Environment Setup
 
@@ -100,7 +100,7 @@
    ````     
    For example, to prepare the No.1 of YCB ojbect, `python3 YCB_train_synthetic.py -o=1`      
 
-## How to Use: PrimA6D
+## How To Use: PrimA6D
   
   All commands are executed in the docker environment.
    
@@ -117,7 +117,7 @@
    ***TBA***
    
 
-## How to Use: PrimA6D++
+## How To Use: PrimA6D++
 
   All commands are executed in the docker environment.
    
@@ -135,7 +135,7 @@
    
 <hr/>
 
-# How To Use - Object-SLAM for Multi-Object Pose Optimization  
+# How To Use: Object-SLAM for Multi-Object Pose Optimization  
 
 ## Citation
 
