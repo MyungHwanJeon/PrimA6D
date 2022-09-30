@@ -67,17 +67,14 @@
 
    $ export PrimA6D_path=/path/to/PrimA6D
    ````
-   We provide a docker image with an environment setup. 
-   You can download this docker image on the docker hub.
+   We provide a docker image with an environment setup. You can download this docker image on the docker hub.
    
  - ***Inference***   
    ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 4_test_all.py -o=[obj_id]         
    ````            
-   you can download pre-trained weights in release. 
-   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
-   For example, to infer the No.1 of YCB ojbect, `python3 4_test_all.py -o=1`        
+   You can download pre-trained weights in release. Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`. For example, to infer the No.1 of YCB ojbect, `python3 4_test_all.py -o=1`        
    
 
 ## How to Use: PrimA6D++
@@ -96,17 +93,14 @@
 
    $ export PrimA6D_path=/path/to/PrimA6D
    ````
-   We provide a docker image with an environment setup. 
-   You can download this docker image on the docker hub.
+   We provide a docker image with an environment setup. You can download this docker image on the docker hub.
    
  - ***Inference***   
    ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 test_prima6d.py -o=[obj_id]         
    ````            
-   you can download pre-trained weights in release. 
-   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`.   
-   For example, to infer the No.1 of YCB ojbect, `python3 test_prima6d.py -o=1`      
+   You can download pre-trained weights in release. Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`. For example, to infer the No.1 of YCB ojbect, `python3 test_prima6d.py -o=1`      
 
 
  
