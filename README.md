@@ -109,7 +109,9 @@
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 4_test_all.py -o=[obj_id]         
    ````            
-   You can download pre-trained weights in release. Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`. For example, to infer the No.1 of YCB ojbect, `python3 4_test_all.py -o=1`        
+   You can download pre-trained weights in release.   
+   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   For example, to infer the No.1 of YCB ojbect, `python3 4_test_all.py -o=1`          
    
  - ***Train*** 
    ***TBA***
@@ -124,7 +126,9 @@
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 test_prima6d.py -o=[obj_id]         
    ````            
-   You can download pre-trained weights in release. Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`. For example, to infer the No.1 of YCB ojbect, `python3 test_prima6d.py -o=1`      
+   You can download pre-trained weights in release.   
+   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`.   
+   For example, to infer the No.1 of YCB ojbect, `python3 test_prima6d.py -o=1`      
 
  - ***Train*** 
    ***TBA***
