@@ -10,8 +10,6 @@
   <a href="https://ayoungk.github.io/">Ayoung Kim</a> at <a href="https://rpm.snu.ac.kr">RPM Robotics Lab</a>
 </div>
 
-<hr/>
-
 ## Note
 - Our study, ***PrimA6D***, is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
