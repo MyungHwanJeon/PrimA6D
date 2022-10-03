@@ -67,11 +67,6 @@
  - ***Docker Image Download & Run***
    ````shell
    $ docker pull jmong1994/jeon:prima6d_new
-
-   $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
-
-   $ export PrimA6D_path=/path/to/PrimA6D
    ````
    We provide a docker image with an environment setup. You can download this docker image on the docker hub.
  
@@ -102,6 +97,10 @@
    
  - ***Inference***   
    ````shell
+   $ xhost +local:docker
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ export PrimA6D_path=/path/to/PrimA6D
+   
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 4_test_all.py -o=[obj_id]         
    ````            
@@ -121,6 +120,10 @@
    
  - ***Inference***   
    ````shell
+   $ xhost +local:docker
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ export PrimA6D_path=/path/to/PrimA6D
+   
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 test_prima6d.py -o=[obj_id]         
    ````            
