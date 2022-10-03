@@ -107,9 +107,11 @@
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 4_test_all.py -o=[obj_id]         
    ````            
-   You can download pre-trained weights in release.   
-   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
-   For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1`          
+   For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1`    
+   
+   For the corresponding object,   
+   Download [PrimA6D](https://drive.google.com/drive/folders/1SGk-zpoSRXB2-bMpKy4YBKnvaL-NB2Wr?usp=sharing) weights and extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and extract this weights to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.         
    
  - ***Train*** 
    ***TBA***
@@ -124,9 +126,11 @@
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 test_prima6d.py -o=[obj_id]         
    ````            
-   You can download pre-trained weights in release.   
-   Extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D++/trained_weight`.   
-   For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1`      
+   For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1`    
+   
+   For the corresponding object,   
+   Download [PrimA6D++](https://drive.google.com/drive/folders/1ZU790_b8nKZ8UttLl-iHuXC3jcgQ3wS8?usp=sharing) weights and extract this weights to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and extract this weights to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.      
 
  - ***Train*** 
    ***TBA***
