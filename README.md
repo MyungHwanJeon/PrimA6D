@@ -18,6 +18,11 @@
 
 <hr/>
 
+## TODO
+- [x] Method Summary
+- [x] Source Code Release for Pose Estimation Method 
+- [ ] Source Code Release for Multi-Object Pose Optimization Method
+
 ## What Is PrimA6D?
  - ***PrimA6D (RA-L 2020)***
     - PrimA6D reconstructs the rotation primitive and its associated keypoints corresponding to the target object for enhancing the orientation inference.
