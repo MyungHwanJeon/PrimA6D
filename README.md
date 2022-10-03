@@ -87,7 +87,9 @@
    $ cd $pose_estimation_path/dataset/YCB
    $ python3 YCB_train_synthetic.py -o=[obj_id]
    $ python3 YCB_train_pbr.py -o=[obj_id]    
-   $ python3 YCB_test.py -o=[obj_id]         
+   $ python3 YCB_train_real.py -o=[obj_id] 
+   $ python3 YCB_test.py -o=[obj_id] 
+   
    ````     
    For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`      
 
