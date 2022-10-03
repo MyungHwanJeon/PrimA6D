@@ -91,10 +91,7 @@
    ````     
    For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`      
 
-## How To Use: PrimA6D
-  
-  All commands are executed in the docker environment.
-   
+## How To Use: PrimA6D        
  - ***Inference***   
    ````shell
    $ xhost +local:docker
@@ -114,10 +111,7 @@
    ***TBA***
    
 
-## How To Use: PrimA6D++
-
-  All commands are executed in the docker environment.
-   
+## How To Use: PrimA6D++   
  - ***Inference***   
    ````shell
    $ xhost +local:docker
