@@ -71,9 +71,9 @@
    We provide a docker image with an environment setup. You can download this docker image on the docker hub.
  
  - ***3D Model Download***      
-   Download [3D Models](https://drive.google.com/drive/folders/11krjncJ6weSpFUhdTZIRCxd__TjzondE?usp=sharing) and save these to `$PrimA6D_path/Pose-Estimation/dataset/3d_model/YCB/`.   
+   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing) and extract these to `$PrimA6D_path/Pose-Estimation/dataset/3d_model/`.   
  
- - ***Dataset Download (only for training)***
+ - ***Dataset Download***
    - Download ***Sun2012Pascal*** and ***BOP*** dataset
    ````shell
    $ cd $pose_estimation_path/dataset/raw_dataset
@@ -82,24 +82,24 @@
    $ bash get_bop_ycbv.sh          
    ````
 
-   - Prepare data
-   ````shell
-   $ cd $pose_estimation_path/dataset/YCB
-   $ python3 YCB_train_synthetic.py -o=[obj_id]
-   $ python3 YCB_train_pbr.py -o=[obj_id]    
-   $ python3 YCB_train_real.py -o=[obj_id] 
-   $ python3 YCB_test.py -o=[obj_id] 
-   
-   ````     
-   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`      
-
 ## How To Use: PrimA6D        
  - ***Inference***   
+   - Run docker
    ````shell
    $ xhost +local:docker
    $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
-   $ export PrimA6D_path=/path/to/PrimA6D
+   $ export PrimA6D_path="/path/to/PrimA6D"
+   ````
    
+   - Prepare data
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ python3 YCB_test.py -o=[obj_id] 
+   ````
+   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`     
+   
+   - Test Model
+   ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 4_test_all.py -o=[obj_id]         
    ````            
@@ -110,16 +110,52 @@
    Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.         
    
  - ***Train***   
-   ***TBA***
+   - Run docker
+   ````shell
+   $ xhost +local:docker
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ export PrimA6D_path="/path/to/PrimA6D"
+   ````
+
+   - Prepare data
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ python3 YCB_train_synthetic.py -o=[obj_id]
+   $ python3 YCB_train_pbr.py -o=[obj_id]    
+   $ python3 YCB_train_real.py -o=[obj_id] 
+   $ python3 YCB_test.py -o=[obj_id] 
+   ````
+   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`     
+   
+   - Train & Test model
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/PrimA6D
+   $ python3 1_train_generator.py -o=[obj_id]
+   $ python3 2_train_keypoint.py -o=[obj_id]    
+   $ python3 3_train_translation.py -o=[obj_id]    
+   $ python3 4_test_all.py -o=[obj_id] 
+   ````   
+   For example, to train the No.1 of YCB object, `python3 1_train_generator.py -o=1`  
    
 
 ## How To Use: PrimA6D++   
  - ***Inference***   
+   - Run docker
    ````shell
    $ xhost +local:docker
    $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
-   $ export PrimA6D_path=/path/to/PrimA6D
+   $ export PrimA6D_path="/path/to/PrimA6D"
+   ````
    
+   - Prepare data
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ python3 YCB_test.py -o=[obj_id] 
+   ````
+   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1` 
+   
+   - Test model
+   ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 test_prima6d.py -o=[obj_id]         
    ````            
@@ -130,11 +166,36 @@
    Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.      
 
  - ***Train***   
-   ***TBA***
+   - Run docker
+   ````shell
+   $ xhost +local:docker
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ export PrimA6D_path="/path/to/PrimA6D"
+   ````
+
+   - Prepare data
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ python3 YCB_train_synthetic.py -o=[obj_id]
+   $ python3 YCB_train_pbr.py -o=[obj_id]    
+   $ python3 YCB_train_real.py -o=[obj_id] 
+   $ python3 YCB_test.py -o=[obj_id] 
+   ````
+   For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`     
+   
+   - Train & Test model
+   ````shell
+   $ cd $PrimA6D_path/Pose_Estimation/PrimA6D++
+   $ python3 train_prima6d.py -o=[obj_id]
+   $ python3 test_prima6d.py -o=[obj_id] 
+   ````   
+   For example, to train the No.1 of YCB object, `python3 train_prima6d.py -o=1`  
    
 <hr/>
 
 # How To Use: Object-SLAM for Multi-Object Pose Optimization  
+
+TBA
 
 ## Citation
 
