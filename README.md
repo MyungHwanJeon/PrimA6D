@@ -80,12 +80,8 @@
  
  - ***Dataset Download***
    - Download ***Sun2012Pascal*** and ***BOP*** dataset
-   ````shell
-   $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
-   $ export PrimA6D_path="/path/to/PrimA6D"
-   
-   $ cd $PrimA6D_path/Pose-Estimation/dataset/raw_dataset
+   ````shell   
+   $ cd /path/to/PrimA6D/Pose-Estimation/dataset/raw_dataset
    $ bash get_sun2012pascalformat.sh
    $ cd bop          
    $ bash get_bop_ycbv.sh          
