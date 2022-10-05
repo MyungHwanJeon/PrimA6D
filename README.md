@@ -81,7 +81,7 @@
  - ***Dataset Download***
    - Download ***Sun2012Pascal*** and ***BOP*** dataset
    ````shell
-   $ cd $pose_estimation_path/dataset/raw_dataset
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/raw_dataset
    $ bash get_sun2012pascalformat.sh
    $ cd bop          
    $ bash get_bop_ycbv.sh          
