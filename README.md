@@ -78,9 +78,9 @@
  - ***3D Model Download***      
    Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing).
    ````shell
-   mv 3d_models.zip /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
-   cd /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
-   unzip 3d_models.zip
+   $ mv 3d_models.zip /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
+   $ cd /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
+   $ unzip 3d_models.zip
    ````
  
  - ***Dataset Download***
