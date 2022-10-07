@@ -76,7 +76,12 @@
    We provide a docker image with an environment setup. You can download this docker image on the docker hub.
  
  - ***3D Model Download***      
-   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing) and extract these to `/path/to/PrimA6D/Pose-Estimation/dataset/3d_model/`.   
+   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing).
+   ````shell
+   mv 3d_models.zip /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
+   cd /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
+   unzip 3d_models.zip
+   ````
  
  - ***Dataset Download***
    - Download ***Sun2012Pascal*** and ***BOP*** dataset
@@ -92,7 +97,7 @@
    - Run docker
    ````shell
    $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata jmong1994/jeon:prima6d_new bash 
    $ export PrimA6D_path="/path/to/PrimA6D"
    ````
    
@@ -118,7 +123,7 @@
    - Run docker
    ````shell
    $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata jmong1994/jeon:prima6d_new bash 
    $ export PrimA6D_path="/path/to/PrimA6D"
    ````
 
@@ -148,7 +153,7 @@
    - Run docker
    ````shell
    $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata jmong1994/jeon:prima6d_new bash 
    $ export PrimA6D_path="/path/to/PrimA6D"
    ````
    
@@ -174,7 +179,7 @@
    - Run docker
    ````shell
    $ xhost +local:docker
-   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata  
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata jmong1994/jeon:prima6d_new bash 
    $ export PrimA6D_path="/path/to/PrimA6D"
    ````
 
