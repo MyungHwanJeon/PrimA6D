@@ -98,7 +98,7 @@
    
    - Prepare data
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/YCB
    $ python3 YCB_test.py -o=[obj_id] 
    ````
    For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1`     
@@ -124,7 +124,7 @@
 
    - Prepare data
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/YCB
    $ python3 YCB_train_synthetic.py -o=[obj_id]
    $ python3 YCB_train_pbr.py -o=[obj_id]    
    $ python3 YCB_train_real.py -o=[obj_id] 
@@ -134,7 +134,7 @@
    
    - Train & Test model
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/PrimA6D
+   $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
    $ python3 1_train_generator.py -o=[obj_id]
    $ python3 2_train_keypoint.py -o=[obj_id]    
    $ python3 3_train_translation.py -o=[obj_id]    
@@ -154,7 +154,7 @@
    
    - Prepare data
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/YCB
    $ python3 YCB_test.py -o=[obj_id] 
    ````
    For example, to prepare the No.1 of YCB object, `python3 YCB_train_synthetic.py -o=1` 
@@ -180,7 +180,7 @@
 
    - Prepare data
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/dataset/YCB
+   $ cd $PrimA6D_path/Pose-Estimation/dataset/YCB
    $ python3 YCB_train_synthetic.py -o=[obj_id]
    $ python3 YCB_train_pbr.py -o=[obj_id]    
    $ python3 YCB_train_real.py -o=[obj_id] 
@@ -190,7 +190,7 @@
    
    - Train & Test model
    ````shell
-   $ cd $PrimA6D_path/Pose_Estimation/PrimA6D++
+   $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
    $ python3 train_prima6d.py -o=[obj_id]
    $ python3 test_prima6d.py -o=[obj_id] 
    ````   
