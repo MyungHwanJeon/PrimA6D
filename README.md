@@ -76,7 +76,7 @@
    We provide a docker image with an environment setup. You can download this docker image on the docker hub.
  
  - ***3D Model Download***      
-   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing) and extract these to `$PrimA6D_path/Pose-Estimation/dataset/3d_model/`.   
+   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing) and extract these to `/path/to/PrimA6D/Pose-Estimation/dataset/3d_model/`.   
  
  - ***Dataset Download***
    - Download ***Sun2012Pascal*** and ***BOP*** dataset
