@@ -1,7 +1,3 @@
-<h2 align="center">
-  ** Source code will be available soon after review process **
-</h2>
-
 # PrimA6D
 
 <div align="left">  
@@ -13,7 +9,7 @@
 ## Note
 - Our study, ***PrimA6D***, is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
-- The extended version, ***PrimA6D++***, is under review.
+- The extended version, ***PrimA6D++***, is accepted for RA-L.
   - [Paper](), [Video](https://youtu.be/akbI61jUJgY)
 
 <hr/>
@@ -32,7 +28,7 @@
     
     - More details in [PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation](https://arxiv.org/abs/2006.07789)
 
- - ***PrimA6D++ (Under Review)***
+ - ***PrimA6D++ (RA-L 2022)***
    - PrimA6D++ estimates three rotation axis primitive images and their associated uncertainties.   
    
     <div align="center">
@@ -49,7 +45,7 @@
     
    - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
 
- - ***Object-SLAM for Multi-Object Pose Optimization (Under Review)***
+ - ***Object-SLAM for Multi-Object Pose Optimization (RA-L 2022)***
    - Leveraging the uncertainty, we formulate the problem as an object-SLAM to optimize multi-object poses.
    
     <div align="center">
@@ -222,9 +218,9 @@ pages={4955-4962},
 doi={10.1109/LRA.2020.3004322}}
 
 @ARTICLE{jeon-2022-prima6d,
-title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation},
 author={Myung-Hwan Jeon and Jeongyun Kim and Ayoung Kim},
-journal={Under Review}}
+journal={IEEE Robotics and Automation Letters}, 
+title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation}}
 ```
 
 ## Contact
