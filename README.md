@@ -10,7 +10,7 @@
 - Our study, ***PrimA6D***, is accepted for RA-L.
   - [Paper](https://arxiv.org/abs/2006.07789), [Video](https://youtu.be/HbNmsmTLRmk)
 - The extended version, ***PrimA6D++***, is accepted for RA-L.
-  - [Paper](), [Video](https://youtu.be/akbI61jUJgY)
+  - [Paper](https://arxiv.org/abs/2211.00960), [Video](https://youtu.be/akbI61jUJgY)
 
 <hr/>
 
@@ -43,7 +43,7 @@
       <a href="https://www.youtube.com/watch?v=akbI61jUJgY"><img src="assets/prima6d++_4.gif" width="49%" alt="IMAGE ALT TEXT"></a>
     </div>
     
-   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
+   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation](https://arxiv.org/abs/2211.00960)
 
  - ***Object-SLAM for Multi-Object Pose Optimization (RA-L 2022)***
    - Leveraging the uncertainty, we formulate the problem as an object-SLAM to optimize multi-object poses.
@@ -52,7 +52,7 @@
       <a href="https://www.youtube.com/watch?v=akbI61jUJgY"><img src="assets/slam.gif" width="75%" alt="IMAGE ALT TEXT"></a>      
     </div>   
    
-   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation]()
+   - More details in [Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation](https://arxiv.org/abs/2211.00960)
 
 <hr/>
 
