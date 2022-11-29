@@ -221,10 +221,10 @@ doi={10.1109/LRA.2020.3004322}}
 author={Jeon, Myung-Hwan and Kim, Jeongyun and Ryu, Jee-Hwan and Kim, Ayoung},
 journal={IEEE Robotics and Automation Letters}, 
 title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation}, 
-year={2022},
-volume={},
-number={},
-pages={1-8},
+year={2023},
+volume={8},
+number={1},
+pages={137-144},
 doi={10.1109/LRA.2022.3222998}}
 ```
 
