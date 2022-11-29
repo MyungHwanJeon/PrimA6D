@@ -208,24 +208,26 @@ TBA
 Please consider citing the paper as:
 ```
 @ARTICLE{jeon-2020-prima6d,
-author={Jeon, Myung-Hwan and Kim, Ayoung},
-journal={IEEE Robotics and Automation Letters}, 
-title={PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation}, 
-year={2020},
-volume={5},
-number={3},
-pages={4955-4962},
-doi={10.1109/LRA.2020.3004322}}
+  author={Jeon, Myung-Hwan and Kim, Ayoung},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={PrimA6D: Rotational Primitive Reconstruction for Enhanced and Robust 6D Pose Estimation}, 
+  year={2020},
+  volume={5},
+  number={3},
+  pages={4955-4962},
+  doi={10.1109/LRA.2020.3004322}
+}
 
 @ARTICLE{jeon-2022-prima6d,
-author={Jeon, Myung-Hwan and Kim, Jeongyun and Ryu, Jee-Hwan and Kim, Ayoung},
-journal={IEEE Robotics and Automation Letters}, 
-title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation}, 
-year={2023},
-volume={8},
-number={1},
-pages={137-144},
-doi={10.1109/LRA.2022.3222998}}
+  author={Jeon, Myung-Hwan and Kim, Jeongyun and Ryu, Jee-Hwan and Kim, Ayoung},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Ambiguity-Aware Multi-Object Pose Optimization for Visually-Assisted Robot Manipulation}, 
+  year={2023},
+  volume={8},
+  number={1},
+  pages={137-144},
+  doi={10.1109/LRA.2022.3222998}
+}
 ```
 
 ## Contact
