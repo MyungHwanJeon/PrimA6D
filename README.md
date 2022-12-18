@@ -233,5 +233,5 @@ Please consider citing the paper as:
 ## Contact
 If you have any questions, contact here please
 ```
-myunghwan.jeon@kaist.ac.kr
+myunghwan.jeon.offl@gmail.com
 ```
