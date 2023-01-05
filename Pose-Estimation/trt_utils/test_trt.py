@@ -19,7 +19,7 @@ def main():
     cp_dev.use()
     
     ## test segmentation model ##
-    s_engine = utils.load_engine("./converted_weight/trt16/engine/model_5_S.engine")            
+    s_engine = utils.load_engine("./converted_weight/Segmentation/trt16/engine/model_5_S.engine")            
     s_inputs, s_outputs, s_bindings, s_stream = utils.allocate_buffers(s_engine)
     s_context = s_engine.create_execution_context()
     
@@ -42,7 +42,7 @@ def main():
     cv2.waitKey(0)
         
     ## test PrimA6D model ##    
-    p_engine = utils.load_engine("./converted_weight/trt16/engine/model_5_P.engine")            
+    p_engine = utils.load_engine("./converted_weight/PrimA6D++/trt16/engine/model_5_P.engine")            
     p_inputs, p_outputs, p_bindings, p_stream = utils.allocate_buffers(p_engine)
     p_context = p_engine.create_execution_context()
     
