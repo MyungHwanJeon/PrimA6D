@@ -197,6 +197,37 @@
    ````   
    For example, to train the No.1 of YCB object, `python3 train_prima6d.py -o=1`  
    
+ - ***Real-Time Demo with ROS***  
+
+   
+   - Prepare data   
+   Download [simple_demo.bag](https://drive.google.com/file/d/1xjqbbVBi_ywKNBaiLADE-RErApyTHISv/view?usp=share_link). 
+   
+   - Run model
+   ```shell
+   $ roscore
+   ````    
+   
+   In the new terminal,
+   ````shell
+   $ xhost +local:docker
+   $ docker run --gpus all -it --env="DISPLAY" --net=host --ipc=host --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -v /:/mydata jmong1994/jeon:prima6d_new bash 
+   $ export PrimA6D_path="/path/to/PrimA6D"   
+   $ cd $PrimA6D_path/Pose-Estimation/ros
+   $ python3 ros_PrimD_torch.py -o=[obj_id]         
+   ````                     
+   For example, to run the No.4 and No.5 of YCB object, `python3 ros_PrimD_torch.py -o="4 5"`  
+   
+   In the new terminal,
+   ````shell
+   $ rosbag play simple_demo.bag           
+   ````    
+   
+   - Check result
+   You can check the result using the rviz in the new terminal.
+   
+   You can also run this real-time demo using a camera that provides 640x480 RGB-D data.
+   
 <hr/>
 
 # How To Use: Object-SLAM for Multi-Object Pose Optimization  
