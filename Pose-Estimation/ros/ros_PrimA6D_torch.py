@@ -46,9 +46,7 @@ from multiprocessing import Pool, Process, Value, Manager, Lock, shared_memory
 parser = argparse.ArgumentParser(
                                 description='R6D')
 parser.add_argument('-o', '--obj', dest='obj', default="2 3 4 5 6 7 8 9 11 13 15 17 18 20 21",
-                    help='object list')
-# parser.add_argument('-v', '--vis', dest='vis', action='store_true',
-#                     help='visualize')                                                
+                    help='object list')                                      
 parser.set_defaults(dataset="YCB")#, vis=False)
 args = parser.parse_args()  
 #print(args)

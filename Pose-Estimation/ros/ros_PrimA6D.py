@@ -49,9 +49,7 @@ parser.add_argument('-m', '--mode', dest='mode', default="trt16",
                     help='[trt16, trt32]')    
 parser.add_argument('-o', '--obj', dest='obj', default="2 3 4 5 6 7 8 9 11 13 15 17 18 20 21",
                     help='object list')
-# parser.add_argument('-v', '--vis', dest='vis', action='store_true',
-#                     help='visualize')                                                
-parser.set_defaults(dataset="YCB", vis=False)
+parser.set_defaults(dataset="YCB")
 args = parser.parse_args()  
 #print(args)                           
 
