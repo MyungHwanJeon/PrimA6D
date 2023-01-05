@@ -70,7 +70,7 @@ args = parser.parse_args()
 
 os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
-model_P_weight_path = "./trained_weight/obj_" + args.obj + "_P.pth_aa"
+model_P_weight_path = "./trained_weight/obj_" + args.obj + "_P.pth"
 model_S_weight_path = "../Segmentation/trained_weight/obj_" + args.obj + "_S.pth"
 
 obj_model_path = '../dataset/3d_model/' + str(args.dataset) + '/model_eval/obj_' +  "%06d" % int(args.obj) + '.ply'
