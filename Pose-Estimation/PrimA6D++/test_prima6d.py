@@ -70,7 +70,7 @@ args = parser.parse_args()
 
 os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
-model_P_weight_path = "./trained_weight/obj_" + args.obj + "_P.pth"
+model_P_weight_path = "./trained_weight/obj_" + args.obj + "_P.pth_aa"
 model_S_weight_path = "../Segmentation/trained_weight/obj_" + args.obj + "_S.pth"
 
 obj_model_path = '../dataset/3d_model/' + str(args.dataset) + '/model_eval/obj_' +  "%06d" % int(args.obj) + '.ply'
@@ -347,13 +347,30 @@ def test(test_dataset, model_P):
                 for iii in range(keypoint_z_np.shape[0]):
                     primitive_z_np = cv2.circle(primitive_z_np, (int(keypoint_z_np[iii, 0]), int(keypoint_z_np[iii, 1])), 1, (1, 1, 1), -1)
 
-                cv2.imshow("img_origin", img_origin)
-                cv2.imshow("im", obj_inp[0].permute(1, 2, 0).data.cpu().numpy())                         
-                cv2.imshow("primitive_x", primitive_x_np)
-                cv2.imshow("primitive_y", primitive_y_np)
-                cv2.imshow("primitive_z", primitive_z_np)                                
-                cv2.waitKey(10)
+                unc_x_fig = plot_unc((torch.exp(keypoint_uncertainty_out[0, 0])).item())              
+                unc_y_fig = plot_unc((torch.exp(keypoint_uncertainty_out[0, 1])).item())
+                unc_z_fig = plot_unc((torch.exp(keypoint_uncertainty_out[0, 2])).item())
+
+                unc_x_fig = cv2.resize(unc_x_fig, (40, 160))
+                unc_y_fig = cv2.resize(unc_y_fig, (40, 160))
+                unc_z_fig = cv2.resize(unc_z_fig, (40, 160))
+
+                primitive_x_np = cv2.resize(primitive_x_np, (160, 160))
+                primitive_y_np = cv2.resize(primitive_y_np, (160, 160))
+                primitive_z_np = cv2.resize(primitive_z_np, (160, 160))
                 
+                total_img = np.zeros((480, 840, 3), dtype=np.float32)
+                total_img[:480, :640, :] = img_origin/255.
+                total_img[0:160, 640:800, :] = primitive_x_np
+                total_img[160:320, 640:800, :] = primitive_y_np
+                total_img[320:480, 640:800, :] = primitive_z_np
+                total_img[0:160, 800:840, :] = unc_x_fig/255.
+                total_img[160:320, 800:840, :] = unc_y_fig/255.
+                total_img[320:480, 800:840, :] = unc_z_fig/255.
+
+                cv2.imshow("result", total_img)                   
+                cv2.waitKey(1)
+
         # measure elapsed time
         batch_time.update(time.time() - end)
         end = time.time()

@@ -284,7 +284,7 @@ def test(test_dataset, model_G, model_T, model_K):
     print("===================================================")    
     print("obj ", args.obj, " test result")    
     print("total : ", len(test_dataset))     
-    print("time : ", batch_time)    
+    print("time : ", batch_time.avg)    
     print("ADD_AUC:", compute_auc_posecnn(np.array(add_errs)))
     print("ADI_AUC:", compute_auc_posecnn(np.array(adi_errs)))    
     print("ADD < 0.1d: ", (true_add/len(test_dataset))*100., ", avg : ", add_record.avg)

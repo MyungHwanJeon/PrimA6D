@@ -29,6 +29,8 @@ import shutil
 import time
 import warnings
 import sys
+import matplotlib
+matplotlib.use('TKAgg') 
 import matplotlib.pyplot as plt
 import copy
 import math
@@ -204,3 +206,22 @@ class ProgressMeter(object):
         num_digits = len(str(num_batches // 1))
         fmt = '{:' + str(num_digits) + 'd}'
         return '[' + fmt + '/' + fmt.format(num_batches) + ']'
+
+def plot_unc(unc):
+
+    axis = [""]
+    fig = plt.figure(figsize=(1,4), facecolor='black')
+    ax = plt.axes()
+    ax.set_facecolor("black")
+    plt.ylim(0, 1.0)
+    plt.xlim(-1.0, 1.0)                    
+    plt.bar(axis, unc, width=0.8)
+    plt.xlabel("%.3f"%unc, fontdict={'color': 'white', 'weight': 'bold', 'size': 15})
+    plt.hlines(0.4, -1, 1, color='red', linestyle='solid', linewidth=2)    
+
+    fig.canvas.draw()
+    unc_fig = np.array(fig.canvas.renderer._renderer)        
+    unc_fig = cv2.cvtColor(unc_fig, cv2.COLOR_BGR2RGB)
+    plt.close(fig)
+
+    return unc_fig                
