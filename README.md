@@ -226,7 +226,7 @@
    - Check result
    You can check the result using the rviz in the new terminal.
    
-   You can also run this real-time demo using a camera that provides 640x480 RGB-D data.
+   You can also run this real-time demo using a camera that provides 640x480 RGB data.
    
 <hr/>
 
