@@ -50,7 +50,6 @@ print("Torchvision Version: ",torchvision.__version__)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Device configuration : ", device)
 
-os.makedirs('./checkpoints', exist_ok=True)
 
 parser = argparse.ArgumentParser(
                                 description='R6D')
@@ -74,7 +73,10 @@ args = parser.parse_args()
 
 total_epoch = args.epoch
 
-model_S_weight_path = "./checkpoints/obj_" + args.obj + "_S.pth"
+os.makedirs('./checkpoints', exist_ok=True)
+os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
+
+model_S_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_S.pth"
 
 #total_epoch = 10     
 

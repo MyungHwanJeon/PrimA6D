@@ -50,7 +50,7 @@ print("Torchvision Version: ",torchvision.__version__)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Device configuration : ", device)
 
-os.makedirs('./checkpoints', exist_ok=True)
+
 
 parser = argparse.ArgumentParser(
                                 description='R6D')
@@ -62,12 +62,19 @@ parser.add_argument('-p', '--dataset_path', required=False,
                     help="dataset path")                                                                                                                 
 parser.add_argument('-o', '--obj', required=True,
                     default=0,
-                    help="object number")                                                                            
+                    help="object number") 
+parser.add_argument('-w', '--downloaded_weight', dest='dw', action='store_true',
+                     help='use downloaded weight')                                                                                                    
                                                                  
 args = parser.parse_args()
 
-model_S_weight_path = "./trained_weight/obj_" + args.obj + "_S.pth"
+os.makedirs('./checkpoints', exist_ok=True)
+os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
+model_S_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_S.pth"
+if args.dw:
+    model_S_weight_path = "./trained_weight/" + args.dataset + "/obj_" + args.obj + "_S.pth"
+                          
 def main():    
     
     ## prepare test dataset ##

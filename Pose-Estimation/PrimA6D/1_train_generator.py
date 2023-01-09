@@ -47,9 +47,7 @@ print("Torchvision Version: ",torchvision.__version__)
 
 # Device configuration
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-print("Device configuration : ", device)
-
-os.makedirs('./checkpoints', exist_ok=True)   
+print("Device configuration : ", device) 
             
 parser = argparse.ArgumentParser(
                                 description='R6D')
@@ -73,9 +71,12 @@ args = parser.parse_args()
 
 total_epoch = args.epoch
 
-model_G_weight_path = "./checkpoints/obj_" + args.obj + "_G.pth"
-model_D_P_weight_path = "./checkpoints/obj_" + args.obj + "_D_P.pth"
-model_D_R_weight_path = "./checkpoints/obj_" + args.obj + "_D_R.pth"
+os.makedirs('./checkpoints', exist_ok=True)   
+os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
+
+model_G_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_G.pth"
+model_D_P_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_D_P.pth"
+model_D_R_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_D_R.pth"
 
 best_primitive_loss = 100
 
@@ -93,7 +94,7 @@ def main():
     ## prepare train dataset ##
     train_file_path = os.path.join(args.dataset_path, "train/obj_%d"%int(args.obj))
     train_file_args = os.listdir(train_file_path)
-    valid_args = ["synthetic", "pbr"]
+    valid_args = ["synthetic", "pbr", "real"]
     train_file_list = list()
     for arg in train_file_args:
         if arg in valid_args:
@@ -271,9 +272,9 @@ def train(train_dataset, model_G, optimizer_G, model_D_R, optimizer_D_R, model_D
             loss_G_P_gan = BCE_loss(pred_fake, is_real=True)     
         
             log_loss = LogLoss()
-            log_loss_ = log_loss(reconst_out, reconst)
+            log_loss_ = log_loss(reconst_out, obj_gt)
             kl_div_loss = kl_divgence_loss(mu, sigma)
-            reconst_loss = Top_K_MSE_loss(reconst_out, reconst, k=4)
+            reconst_loss = Top_K_MSE_loss(reconst_out, obj_gt, k=4)
             primitive_loss = rotation_primitive_loss(primitive_out, primitive_gt)        
 
             loss_G = loss_G_P_gan + kl_div_loss + reconst_loss + log_loss_ + primitive_loss

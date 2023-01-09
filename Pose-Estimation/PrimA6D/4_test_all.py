@@ -51,8 +51,7 @@ print("Torchvision Version: ",torchvision.__version__)
 # Device configuration
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Device configuration : ", device)
-
-os.makedirs('./checkpoints', exist_ok=True)   
+ 
             
 parser = argparse.ArgumentParser(
                                 description='R6D')
@@ -64,16 +63,23 @@ parser.add_argument('-p', '--dataset_path', required=False,
                     help="dataset path")                                                                                                  
 parser.add_argument('-o', '--obj', required=True,
                     default=0,
-                    help="object number")                                          
+                    help="object number")           
+parser.add_argument('-w', '--downloaded_weight', dest='dw', action='store_true',
+                     help='use downloaded weight')                                                             
                                                            
 args = parser.parse_args()
 
+os.makedirs('./checkpoints', exist_ok=True)   
 os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
-model_G_weight_path = "./trained_weight/obj_" + args.obj + "_G.pth"
-model_K_weight_path = "./trained_weight/obj_" + args.obj + "_K.pth"
-model_T_weight_path = "./trained_weight/obj_" + args.obj + "_T.pth"
-model_S_weight_path = "../Segmentation/trained_weight/obj_" + args.obj + "_S.pth"
+model_G_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_G.pth"
+model_K_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_K.pth"
+model_T_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_T.pth"
+if args.dw:
+    model_G_weight_path = "./trained_weight/" + args.dataset + "/obj_" + args.obj + "_G.pth"
+    model_K_weight_path = "./trained_weight/" + args.dataset + "/obj_" + args.obj + "_K.pth"
+    model_T_weight_path = "./trained_weight/" + args.dataset + "/obj_" + args.obj + "_T.pth"
+model_S_weight_path = "../Segmentation/trained_weight/" + args.dataset + "/obj_" + args.obj + "_S.pth"
 
 obj_model_path = '../dataset/3d_model/' + str(args.dataset) + '/model_eval/obj_' +  "%06d" % int(args.obj) + '.ply'
 obj_model = trimesh.load(obj_model_path)

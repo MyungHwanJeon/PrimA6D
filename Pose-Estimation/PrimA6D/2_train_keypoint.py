@@ -50,8 +50,6 @@ print("Torchvision Version: ",torchvision.__version__)
 # Device configuration
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Device configuration : ", device)
-
-os.makedirs('./checkpoints', exist_ok=True)   
             
 parser = argparse.ArgumentParser(
                                 description='R6D')
@@ -75,10 +73,11 @@ args = parser.parse_args()
 
 total_epoch = args.epoch
 
+os.makedirs('./checkpoints', exist_ok=True)   
 os.makedirs('./checkpoints/' + args.dataset, exist_ok=True)
 
-model_G_weight_path = "./checkpoints/obj_" + args.obj + "_G.pth"
-model_K_weight_path = "./checkpoints/obj_" + args.obj + "_K.pth"
+model_G_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_G.pth"
+model_K_weight_path = "./checkpoints/" + args.dataset + "/obj_" + args.obj + "_K.pth"
 
 best_re = 10000
 
@@ -119,7 +118,7 @@ def main():
     ## prepare train dataset ##
     train_file_path = os.path.join(args.dataset_path, "train/obj_%d"%int(args.obj))
     train_file_args = os.listdir(train_file_path)
-    valid_args = ["synthetic", "pbr"]
+    valid_args = ["synthetic", "pbr", "real"]
     train_file_list = list()
     for arg in train_file_args:
         if arg in valid_args:

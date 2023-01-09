@@ -223,5 +223,7 @@ def plot_unc(unc):
     unc_fig = np.array(fig.canvas.renderer._renderer)        
     unc_fig = cv2.cvtColor(unc_fig, cv2.COLOR_BGR2RGB)
     plt.close(fig)
+    
+    #unc_fig = np.ones((40, 200, 3))
 
     return unc_fig                
