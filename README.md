@@ -107,9 +107,9 @@
    - Test Model
    ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D
-   $ python3 4_test_all.py -o=[obj_id]         
+   $ python3 4_test_all.py -o=[obj_id] -w         
    ````            
-   For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1`    
+   For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1 -w`    
    
    For the corresponding object,   
    Download [PrimA6D](https://drive.google.com/drive/folders/1SGk-zpoSRXB2-bMpKy4YBKnvaL-NB2Wr?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
@@ -163,9 +163,9 @@
    - Test model
    ````shell
    $ cd $PrimA6D_path/Pose-Estimation/PrimA6D++
-   $ python3 test_prima6d.py -o=[obj_id]         
+   $ python3 test_prima6d.py -o=[obj_id] -w         
    ````            
-   For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1`    
+   For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1 -w`    
    
    For the corresponding object,   
    Download [PrimA6D++](https://drive.google.com/drive/folders/1ZU790_b8nKZ8UttLl-iHuXC3jcgQ3wS8?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
