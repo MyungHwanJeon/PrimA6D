@@ -244,8 +244,7 @@
    $ sudo mkdir /opt/osmesa
    $ sudo chmod 777 /opt/osmesa
    $ sudo mkdir /opt/llvm
-   $ sudo chmod 777 /opt/llvm
-   $ cd ./build/
+   $ sudo chmod 777 /opt/llvm   
    $ sudo bash ../osmesa-install.sh
    ````
    
