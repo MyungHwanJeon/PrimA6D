@@ -240,16 +240,19 @@
 
  - ***install osmesa***   
    ````shell
+   $ export PrimA6D_path="/path/to/PrimA6D"
    $ cd $PrimA6D_path/Multi-Object-Pose-Optimization/src/pose_optimization/bop_renderer/osmesa-install/build
    $ sudo mkdir /opt/osmesa
    $ sudo chmod 777 /opt/osmesa
    $ sudo mkdir /opt/llvm
    $ sudo chmod 777 /opt/llvm   
    $ sudo bash ../osmesa-install.sh
+   $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/osmesa:/opt/llvm
    ````
    
  - ***build ros package***
    ````shell
+   $ export PrimA6D_path="/path/to/PrimA6D"
    $ cd $PrimA6D_path/Multi-Object-Pose-Optimization
    $ catkin build --save-config --cmake-args -DCMAKE_BUILD_TYPE=Release
    ```` 
