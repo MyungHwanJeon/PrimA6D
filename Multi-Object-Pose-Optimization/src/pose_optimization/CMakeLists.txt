@@ -126,9 +126,9 @@ add_executable(graph_optimization src/graph_optimization.cpp src/object_renderer
 add_dependencies(graph_optimization ${catkin_EXPORTED_TARGETS} franka_rpm_msgs_gencpp)
 target_link_libraries(graph_optimization ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${Boost_LIBRARIES} gtsam Eigen3::Eigen bop_renderer ${OSMESA_LIBRARIES})
 
-add_executable(graph_optimization_with_prior src/graph_optimization_with_prior.cpp src/object_renderer.cpp src/usrdef.cpp )
-add_dependencies(graph_optimization_with_prior ${catkin_EXPORTED_TARGETS} franka_rpm_msgs_gencpp)
-target_link_libraries(graph_optimization_with_prior ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${Boost_LIBRARIES} gtsam Eigen3::Eigen bop_renderer ${OSMESA_LIBRARIES})
+#add_executable(graph_optimization_with_prior src/graph_optimization_with_prior.cpp src/object_renderer.cpp src/usrdef.cpp )
+#add_dependencies(graph_optimization_with_prior ${catkin_EXPORTED_TARGETS} franka_rpm_msgs_gencpp)
+#target_link_libraries(graph_optimization_with_prior ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${Boost_LIBRARIES} gtsam Eigen3::Eigen bop_renderer ${OSMESA_LIBRARIES})
 
 add_executable(visualization src/visualization.cpp src/usrdef.cpp)
 add_dependencies(visualization ${catkin_EXPORTED_TARGETS} franka_rpm_msgs_gencpp)
