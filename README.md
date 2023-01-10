@@ -17,7 +17,7 @@
 ## TODO
 - [x] Method Summary
 - [x] Source Code Release for Pose Estimation Method 
-- [ ] Source Code Release for Multi-Object Pose Optimization Method
+- [x] Source Code Release for Multi-Object Pose Optimization Method
 
 ## What Is PrimA6D?
  - ***PrimA6D (RA-L 2020)***
