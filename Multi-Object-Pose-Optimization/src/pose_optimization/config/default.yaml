@@ -1,0 +1,18 @@
+seq_name: "default"
+seq_index: 1
+save_data: False
+save_path: ""
+
+img_width: 640
+img_height: 480
+
+use_robot_franka: True
+robot_base_weight: 1.0e-10
+robot_manipulator_weight: 1.0e-10
+
+object_weight: 1.0
+object_icp_weight: 1.0e-5
+
+add_noise: False
+tranalation_noise: 30.0
+rotation_noise: 3.0

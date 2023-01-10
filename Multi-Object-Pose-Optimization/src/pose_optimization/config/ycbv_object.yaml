@@ -1,0 +1,151 @@
+dataset: ycbv
+dataset_object:
+  - index: 1
+    name: 002_master_chef_can
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_1/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_1/textured_reduced.dae
+  - index: 2
+    name: 003_cracker_box
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_2/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_2/textured_reduced.dae
+  - index: 3
+    name: 004_sugar_box
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_3/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_3/textured_reduced.dae
+  - index: 4
+    name: 005_tomato_soup_can
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_4/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_4/textured_reduced.dae
+  - index: 5
+    name: 006_mustard_bottle
+    threshold: 0.35
+    symmetry: False  
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_5/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_5/textured_reduced.dae
+  - index: 6
+    name: 007_tuna_fish_can
+    threshold: 0.35
+    symmetry: False    
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_6/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_6/textured_reduced.dae
+  - index: 7
+    name: 008_pudding_box
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_7/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_7/textured_reduced.dae
+  - index: 8
+    name: 009_gelatin_box
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_8/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_8/textured_reduced.dae
+  - index: 9
+    name: 010_potted_meat_can
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_9/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_9/textured_reduced.dae
+  - index: 10
+    name: 011_banana
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_10/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_10/textured_reduced.dae
+  - index: 11
+    name: 019_pitcher_base
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_11/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_11/textured_reduced.dae
+  - index: 12
+    name: 021_bleach_cleanser
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_12/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_12/textured_reduced.dae
+  - index: 13
+    name: 024_bowl
+    threshold: 0.35
+    symmetry: True
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_13/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_13/textured_reduced.dae
+  - index: 14
+    name: 025_mug
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_14/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_14/textured_reduced.dae
+  - index: 15
+    name: 035_power_drill
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_15/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_15/textured_reduced.dae
+  - index: 16
+    name: 036_wood_block
+    threshold: 0.35
+    symmetry: True
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_16/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_16/textured_reduced.dae
+  - index: 17
+    name: 037_scissors
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_17/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_17/textured_reduced.dae
+  - index: 18
+    name: 040_large_marker
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_18/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_18/textured_reduced.dae
+  - index: 19
+    name: 051_large_clamp
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_19/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_19/textured_reduced.dae
+  - index: 20
+    name: 052_extra_large_clamp
+    threshold: 0.35
+    symmetry: False
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_20/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_20/textured_reduced.dae
+  - index: 21
+    name: 061_foam_brick
+    threshold: 0.35
+    symmetry: true
+    n_instance: 1
+    model_path: /3d_model/YCB/obj_21/textured_reduced_mm.ply
+    vis_model_path: package://pose_optimization/3d_model/YCB/obj_21/textured_reduced.dae
+                    
+  
