@@ -257,7 +257,7 @@
  - ***Downliad 3D models***
    ````shell
    download [3d_model](https://drive.google.com/file/d/1ON7k6_-0s-kMGERHoJERVVTnqg05G0lQ/view?usp=sharing).
-   unzip to cd $PrimA6D_path/Multi-Object-Pose-Optimization/src/pose_optimization/3d_model/
+   unzip to $PrimA6D_path/Multi-Object-Pose-Optimization/src/pose_optimization/3d_model/
    ````
    
  - ***run***  
