@@ -232,7 +232,35 @@
 
 # How To Use: Object-SLAM for Multi-Object Pose Optimization  
 
-TBA
+## Environment Setup
+
+ - ***Download Data Processor for file player***
+ 
+   refer to [Data Processor](https://github.com/MyungHwanJeon/data_processor)
+
+ - ***install osmesa***   
+   ````shell
+   $ cd $PrimA6D_path/Multi-Object-Pose-Optimization/src/pose_optimization/bop_renderer/osmesa-install/build
+   $ sudo mkdir /opt/osmesa
+   $ sudo chmod 777 /opt/osmesa
+   $ sudo mkdir /opt/llvm
+   $ sudo chmod 777 /opt/llvm
+   $ sudo bash ../osmesa-install.sh
+   ````
+   
+ - ***build ros package***
+   ````shell
+   $ cd $PrimA6D_path/Multi-Object-Pose-Optimization
+   $ catkin build --save-config --cmake-args -DCMAKE_BUILD_TYPE=Release
+   ```` 
+   
+ - ***run***  
+   ````shell
+   $ cd $PrimA6D_path/Multi-Object-Pose-Optimization
+   $ source devel/setup.bash
+   $ roslaunch pose_optimization run_franka.launch
+   $ Play sensor data using [Data Processor](https://github.com/MyungHwanJeon/data_processor)
+   ```` 
 
 ## Citation
 
