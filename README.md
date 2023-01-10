@@ -247,7 +247,7 @@
    $ sudo mkdir /opt/llvm
    $ sudo chmod 777 /opt/llvm   
    $ sudo bash ../osmesa-install.sh
-   $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/osmesa:/opt/llvm
+   $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/osmesa/lib:/opt/llvm/lib
    ````
    
  - ***build ros package***
