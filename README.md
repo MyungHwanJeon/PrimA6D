@@ -72,7 +72,7 @@
    We provide a docker image with an environment setup. You can download this docker image on the docker hub.
  
  - ***3D Model Download***      
-   Download [3D Models](https://drive.google.com/file/d/1ivFtbWppbx2fj2w0rG3R9TISn8_GZiQ8/view?usp=sharing).
+   Download [3D Models](https://drive.google.com/drive/folders/1sUHW1hpq3MTCS2cJsthdz-bLMRR3T1g8?usp=drive_link).
    ````shell
    $ mv 3d_models.zip /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
    $ cd /path/to/PrimA6D/Pose-Estimation/dataset/3d_model/
@@ -112,8 +112,8 @@
    For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1 -w`    
    
    For the corresponding object,   
-   Download [PrimA6D](https://drive.google.com/drive/folders/1SGk-zpoSRXB2-bMpKy4YBKnvaL-NB2Wr?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
-   Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.         
+   Download [PrimA6D](https://drive.google.com/drive/folders/1uGoTDKYLCk2zB16Bp7OKCXzOJOA3sUCF?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   Download [Segmentation](https://drive.google.com/drive/folders/1cbZyrRSr1V_nSAD_iPTtCUKFyXa7ZMju?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.         
    
  - ***Train***   
    - Run docker
@@ -168,8 +168,8 @@
    For example, to infer the No.1 of YCB object, `python3 test_prima6d.py -o=1 -w`    
    
    For the corresponding object,   
-   Download [PrimA6D++](https://drive.google.com/drive/folders/1ZU790_b8nKZ8UttLl-iHuXC3jcgQ3wS8?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
-   Download [Segmentation](https://drive.google.com/drive/folders/1urfMR9EffdMRK-H-xjmvGQ3o7B9qmPDj?usp=sharing) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.      
+   Download [PrimA6D++](https://drive.google.com/drive/folders/1uGoTDKYLCk2zB16Bp7OKCXzOJOA3sUCF?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   Download [Segmentation](https://drive.google.com/drive/folders/1cbZyrRSr1V_nSAD_iPTtCUKFyXa7ZMju?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.      
 
  - ***Train***   
    - Run docker
@@ -259,7 +259,7 @@
    
  - ***Downliad 3D models***
 
-   - download [3d_model](https://drive.google.com/file/d/1ON7k6_-0s-kMGERHoJERVVTnqg05G0lQ/view?usp=sharing).
+   - download [3d_model](https://drive.google.com/drive/folders/1dBr39-EpXiVXpAKjsnHAyyCzwnCNP70y?usp=drive_link).
    - unzip to $PrimA6D_path/Multi-Object-Pose-Optimization/src/pose_optimization/3d_model/
 
    
