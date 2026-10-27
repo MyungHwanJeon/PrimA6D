@@ -112,7 +112,7 @@
    For example, to infer the No.1 of YCB object, `python3 4_test_all.py -o=1 -w`    
    
    For the corresponding object,   
-   Download [PrimA6D](https://drive.google.com/drive/folders/1uGoTDKYLCk2zB16Bp7OKCXzOJOA3sUCF?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
+   Download [PrimA6D](https://drive.google.com/drive/folders/1Buleh08kYIrsuHr4J7pUji6OvpJQnZQT?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/PrimA6D/trained_weight`.   
    Download [Segmentation](https://drive.google.com/drive/folders/1cbZyrRSr1V_nSAD_iPTtCUKFyXa7ZMju?usp=drive_link) weights and save these to `$PrimA6D_path/Pose-Estimation/Segmentation/trained_weight`.         
    
  - ***Train***   
