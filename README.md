@@ -1,7 +1,7 @@
 # PrimA6D
 
 <div align="left">  
-  <a href="https://myunghwanjeon.github.io">Myung-Hwan Jeon</a>,  
+  <a href="https://raivlab.github.io/">Myung-Hwan Jeon</a>,  
   <a href="https://scholar.google.co.kr/citations?user=vW2JtFAAAAAJ">Jeongyun Kim</a> and
   <a href="https://ayoungk.github.io/">Ayoung Kim</a> at <a href="https://rpm.snu.ac.kr">RPM Robotics Lab</a>
 </div>
@@ -304,5 +304,5 @@ Please consider citing the paper as:
 ## Contact
 If you have any questions, contact here please
 ```
-myunghwan.jeon.offl@gmail.com
+jmong1994@gmail.com
 ```
